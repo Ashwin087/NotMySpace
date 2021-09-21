@@ -8,38 +8,6 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 
 .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
 
-*{
-  padding: 0;
-  margin: 0;
-  text-decoration: none;
-  list-style: none;
-  box-sizing: border-box;
-}
-
-.wrapper {
-  max-width: 1280px;
-  width: 90%;
-  margin: 0 auto;
-  border: 1px solid red;
-}
-
-li {
-  border: 1px solid black;
-  padding: 1rem;
-}
-
-button {
-  cursor: pointer;
-  font-size: 1.5rem;
-  padding: 0.25rem 0.25rem; 
-  outline: none;
-  border: none;
-  color: black;
-  background-color: transparent;
-}
-
-
-
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -52,4 +20,136 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+/* Removing defaults & standard styling */
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+.app {
+  background-color: black;
+}
+
+p {
+  font-size: 1.05rem;
+  line-height: 1.33rem;
+}
+
+.wrapper {
+  max-width: 1280px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+
+/* Header */
+h1 {
+  margin: 0 0; 
+  padding: 1.25rem 0 1rem;
+  color: white;
+}
+
+.slogan {
+  margin-bottom: 1rem;
+  color: white;
+}
+
+form {
+  padding: 0 0 1.25rem; 
+  display: flex;
+  align-items: center;
+}
+
+.searchButton{
+  font-size: 0.85rem;
+  padding: 0.35rem 0.55rem;
+  border: 1px solid black;
+  margin-left: 0.5rem;
+  border-radius: 5%;
+  background-color: white;
+}
+
+.searchButton:hover,
+.searchButton:focus {
+  background-color: lightsteelblue;
+  color: black;
+}
+
+/* Gallery */
+li {
+  border: 1px solid black;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 1rem;
+  background-color: white;
+}
+
+img {
+  width: 100%;
+  border-radius: 1rem;
+}
+
+li > p {
+  font-size: 1.1rem;
+  font-weight: bolder;
+  padding-bottom: 1rem;
+}
+
+.textContainer {
+  padding: 0.5rem 0 0.75rem;
+}
+
+.textContainer > p:first-child {
+  padding-bottom: 1rem;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+}
+
+button {
+  cursor: pointer;
+  font-size: 1.25rem;
+  padding: 0.65rem 0.25rem 0.25rem; 
+  outline: none;
+  border: none;
+  color: black;
+  background-color: transparent;
+}
+
+/* Footer */
+.madeBy {
+  padding: 0.75rem 0 2rem;
+  color: white;
+  text-align: center;
+}
+
+/* Media Query */
+@media(min-width: 650px){
+  .gallery {
+    display: grid; 
+    grid-template-columns: 50% 50%; 
+    gap: 1rem;
+  }
+
+  .galleryItem {
+    width: 100%;
+  }
+}
+
+@media(min-width: 1000px){
+  .gallery {
+    display: grid; 
+    grid-template-columns: 33% 33% 33%; 
+    gap: 1rem;
+  }
+
+  .galleryItem {
+    width: 100%;
+  }
 }

@@ -23,8 +23,8 @@ const Button = ({result, likesList, setLikesList}) => {
 
     return(
         likesList.includes(result)
-        ? <button onClick={handleClick} className={result} aria-label="Like button" style={{color: "red"}}> ❤ </button>
-        : <button onClick={handleClick} className={result} aria-label="Like button" style={{color: "black"}}> ❤ </button>
+            ? <button onClick={handleClick} className={result} aria-label="Like button" style={{ color: "red" }}> ❤️ </button>
+            : <button onClick={handleClick} className={result} aria-label="Like button" style={{ color: "black" }}> 🤍 </button>
     )
 }
 
