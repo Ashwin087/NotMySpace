@@ -1,6 +1,4 @@
-import { useState } from "react";
-
-    const Button = ({result, likesList, setLikesList}) => {
+const Button = ({result, likesList, setLikesList}) => {
 
     const handleClick = (event) => {
         event.preventDefault();
