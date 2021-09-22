@@ -2,7 +2,6 @@ const Header = ({ setSearchTerm }) => {
 
     const handleSearch = (event) => {
         event.preventDefault();
-        console.log(event.target[0].value);
         setSearchTerm(event.target[0].value);
     }
 

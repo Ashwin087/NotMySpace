@@ -1,8 +1,8 @@
 const Loading = () => {
     return(
-        <div className="wrapper">
-            <p>Loading...</p>
-        </div>
+        <main className="wrapper loadScreen">
+            <p className="loading">Loading...</p>
+        </main>
     )
 }
 

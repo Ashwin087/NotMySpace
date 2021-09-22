@@ -21,6 +21,5 @@ function App() {
 
 export default App;
 
-// Make responsive
-// Add loading state (component)
-// Clean up console log
+// style header
+// fix error screen

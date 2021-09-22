@@ -10,14 +10,11 @@ const Button = ({result, likesList, setLikesList}) => {
 
             localStorage.setItem('list', JSON.stringify(filterSaved));
             setLikesList(filterSaved);
-            console.log('IN STORAGE');
-
         } else {
             const pseudoList = [...likesList];
             pseudoList.push(result);
             localStorage.setItem('list', JSON.stringify(pseudoList));
             setLikesList(pseudoList);
-            console.log('GOING TO STORAGE')
         }
     }
 
