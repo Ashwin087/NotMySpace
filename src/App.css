@@ -32,6 +32,10 @@ code {
   box-sizing: border-box;
 }
 
+html {
+  background-color: black;
+}
+
 .app {
   background-color: black;
 }
@@ -162,6 +166,11 @@ button {
   color: white;
   text-align: center;
   height: 10vh;
+}
+
+footer a {
+  color: #9fc558;
+  font-weight: bold;
 }
 
 /* Others */

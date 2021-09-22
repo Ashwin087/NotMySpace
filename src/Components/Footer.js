@@ -1,10 +1,11 @@
 const Footer = () => {
     return (
-        <div className="wrapper">
+        <footer className="wrapper">
             <p className="madeBy"> Made by 
-            <a href="https://www.ashwinsingh.dev/" target="_blank" rel="noopener noreferrer"> Ashwin</a> for Shopify!</p>
+            <a href="https://www.ashwinsingh.dev/" target="_blank" rel="noopener noreferrer"> Ashwin</a> for 
+                <a href="https://www.shopify.ca/" target="_blank" rel="noopener noreferrer"> Shopify</a>!</p>
             
-        </div>
+        </footer>
     )
 }
 
