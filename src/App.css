@@ -53,6 +53,7 @@ h1 {
   margin: 0 0; 
   padding: 1.25rem 0 1rem;
   color: white;
+  font-size: 3rem;
 }
 
 .slogan {
@@ -64,6 +65,12 @@ form {
   padding: 0 0 1.25rem; 
   display: flex;
   align-items: center;
+}
+
+.search {
+  padding: 0.25rem 0.75rem;
+  width: 40%;
+  max-width: 350px;
 }
 
 .searchButton{
@@ -91,7 +98,7 @@ form {
   
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 8% 52% 10% 25%;
+  grid-template-rows: 8% 52% 8% 27%;
   gap: 0.1rem;
   grid-template-areas: 
   "title"
@@ -167,7 +174,7 @@ button {
 
 .resultScreen,
 .loadScreen {
-  overflow: hidden;  
+  overflow: hidden; 
 }
 
 /* Media Query */
